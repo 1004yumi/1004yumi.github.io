@@ -1,9 +1,2 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>test</title>
-</head>
-<body>
-    <h1>Hi~~~</h1>
-</body>
-</html>
+# 1004yumi.github.io
+웹 페이지 제작
