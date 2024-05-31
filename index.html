@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="user-scalable=no, initial-scale=1">
@@ -15,41 +16,232 @@
         function navigate(page) {
             const content = document.getElementById('content');
             switch (page) {
-            case 'home':
-                content.innerHTML = `
-                    <h1>Welcome to My SPA</h1>
-                    <p>This is the home page.</p>
+                case 'home':
+                    content.innerHTML = `
+
+                <div id="content-profile">
+                    <section id="main_section">
+                            <!-- 프로필 사진 -->
+                            <img src="yumi.jpg" alt="yumi" class="profile">
+
+                            <!-- 프로필 박스 -->
+                            <div class="profile-box"> 
+                                <lable>- 김유미</lable> <br>
+                                <lable>- 2002.05.17</lable> <br>
+                                <lable>- <a href="https://cms.kangwon.ac.kr/cse/index.do" target="_blank">강원대학교 컴퓨터공학과</a></lable> <br>
+                                <lable>- 락스타 꿈나무</lable> <br>
+                            </div>
+
+                            <!-- 링크 -->
+                            <div class="link"> 
+                                <a href="https://www.instagram.com/yumimix2/" target="_blank"><img src="instagram.png" alt="insta"></a>
+                                <a href="https://blog.naver.com/comely_yum" target="_blank"><img src="blog.png" alt="blog"></a>
+                                <a href="mailto:dbal8620@kangwon.ac.kr"><img src="link.png" alt="email"></a>
+                            </div>
+                     </section>
+
+                <aside id="main_aside">
+                    <div class="myself">
+                        <!-- 좌우명 및 자기소개 -->
+                        <h1><font face="궁서체">"긍정적으로 살자!"</font></h1>
+                        <label>23살, 인천 토박이. 같은 동네에서 나고 자랐다.</label><br><br>
+                        <label>장점: 사교성이 좋고 웃음이 많다 ^^ </label><br>
+                        <label>단점: 걱정이 많다. -> 잡생각이 많을 때는 바로 잠을 잔다. </label><br>
+                        <label>취미: k-pop 음악 듣기, 아이돌 무대 보기, 블로그 쓰기, 독서하기</label><br><br>
+                        <label>제일 좋아하는 건 <a href="https://www.instagram.com/jeonghaniyoo_n/" target="_blank">너...♡</a></label>
+                    </div>
+                </aside>     
+
                 `;
-                break;
-            case 'birth':
-                content.innerHTML = `
-                    <h1>birth Us</h1>
-                    <p>This is the birth page.</p>
+                    break;
+                case 'book':
+                    content.innerHTML = `
+                    <h1>이달의 책</h1>
+                    <lable>* 표지를 클릭하면 구매 사이트로 넘어갑니다. </lable>
+                    <lable>* 표지에 커서를 올리면 명대사가 나옵니다. </lable><br><br>
+
+                    <div id="bookclub">
+                        <div class="bookstlye">
+                            <a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=337280683" target="_blank"  title="헤엄쳐야지 별수 있나요. 어쩌면 세상은 그 자체로 바닥없는 물이기도 하고."><img src="book1.jpg" alt="gill" class="books"></a>
+                            <br><br>
+                                <lable >아가미</lable> <br>
+                                <lable>저자: 구병모</lable> <br><br>
+                                <div class="impression">
+                                    <lable>'곤'을 보면 어느 바다에서 헤엄치고 있을 법한 상상이 든다.<br>
+                                            어디에선가 헤엄치면서 자유롭게 바다를 누리고 있을 곤이.<br>
+                                            다음에 서해에서 만나면 반갑게 인사하고 싶다.<br>
+                                            작가의 말을 보고 작가가 얼마나 이 소설을 사랑하고 있는지 확실히 느껴졌다.<br>
+                                    </lable> <br>
+                                </div>
+                        </div>
+                        <div class="bookstlye"> 
+                            <a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=307692409" target="_blank" title="네가 사랑해 라고 하는 말이 이젠 미안해라고 들려."><img src="book2.jpg" alt="torrent" class="books"></a>
+                            <br><br>
+                                <lable>급류</lable> <br>
+                                <lable>저자: 정대건</lable> <br><br>
+                                <div class="impression">
+                                    <lable>이 책을 읽는 내내 도담이와 해솔이의 사랑에 휩쓸리는 기분을 많이 받았다. 숨도 못 쉬고 완독을 했다.<br>
+                                            결말이 해피 엔딩인지 세드 엔딩인지 모를 정도였고 둘이 빨간실로 이어진 운명이 아닐까? 라는 생각이 들었다.<br> 
+                                            책 뒤표지의 이옥섭 감독님 말도 좋았고 나도 저런 사랑을 할 수 있을지 궁금했다.<br>
+                                            서로가 전부였던 사이였는데 헤어질 수 있을까..?</lable> <br>
+                                </div>
+                        </div>
+                        <div class="bookstlye"> 
+                            <a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=249326499" target="_blank"  title="늘 사랑이란 혼란스럽고 비밀스러운 무엇이라고 생각해 온 채리티에게 하니는 사랑을 여름 공기처럼 밝고 싱그러운 것으로 만들어 주었다."><img src="book3.jpg" alt="summer" class="books"></a>
+                            <br><br>
+                                <lable>여름</lable> <br>
+                                <lable>저자: 이디스 워튼</lable> <br><br>
+                                <div class="impression">
+                                    <lable>채리티(작중 주인공)가 한여름 밤의 사랑을 통해 성장하는 모습을 담고 있는 소설이다. 겨울에 읽는 “여름”은 마음을 따뜻하게 만들어주는 것은 물론 따사로운 햇빛을 받고 있다는 느낌을 준다.<br>
+                                            채리티란 이름이 ‘사랑’을 뜻하였고, 루시어스 하니의 사랑은 얻지 못했지만 로열 변호사의 사랑을 얻는 모습을 보여준다.<br>
+                                            또한 채리티의 첫 대사와 마지막 대사를 보면 채리티가 인격적으로 성숙해졌다는 것을 알 수가 있다.<br>
+                                            작품 해설도 너무 좋았다. <h4>"순수에서 경험으로"</h4>
+                                    </lable> <br>
+                                </div>
+                        </div>
+                        <div class="bookstlye"> 
+                            <a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=249441091" target="_blank"  title="우리는 우리가 사랑하고 우리를 사랑해 주는 사람들 안에서 우리가 된다."><img src="book4.jpg" alt="shirley" class="books"></a>
+                            <br><br>
+                                <lable>더 셜리 클럽</lable> <br>
+                                <lable>저자: 박서련</lable>  <br><br>
+                                <div class="impression">
+                                    <lable>『셜리에게<br>
+                                        에밀리가 이미 멋진 편지를 써서 나는 그리 할 말이 없다.<br>
+                                        네가 찾고 있는 사람도 혼혈이라고 했지. 여러 문화적 배경을 지닌 사람들은 그 문화적 배경에서보다 그들을 사랑해 주는 사람들 안에서 정체성을 찾게 된다. 나는 그렇게 생각해. 우리는 우리가 사랑하고 우리를 사랑해 주는 사람들 안에서 우리가 된다.<br>
+                                        네가 찾고 있는 사람에게 네가 주는 사랑이 그 사람을 완성해 줄 거다.<br>
+                                        건강해야 한다.<br>
+                                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp너의 충실한(Your sincere)<br>
+                                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp셜리 넬슨』</lable> <br><br>
+                                        책을 읽는 내내 너무 사랑스러운 소설이라고 생각했다. 나도 셜리 클럽에 가입하고 싶은 생각이 들었고, 전 세계의 존재하는 "유미"를 찾아 "유미 클럽"을 만들고 싶다는 생각이 들었다. 
+                                        나한테도 이렇게 든든한 지원군이 존재했으면 좋겠고, 내가 그런 사람이 되고 싶다는 생각을 했다.
+                                </div>
+                        </div>
+                    </div>
+                    
                 `;
-                break;
-            case 'bukitlist':
-                content.innerHTML = `
-                    <h1>My bukitlist</h1>
-                    <p>This is the bukitlist page.</p>
+                    break;
+                case 'bukitlist':
+                    content.innerHTML = `
+                    <h1>☆ My bukitlist ☆</h1>
+                    
+                    <table border="1">
+                    <thead>
+                        <tr>
+                            <th>분야</th>
+                            <th>달성 여부</th>
+                            <th>하고 싶은 일</th>
+                            <th>내  용</th>
+                            <th>달성 기한일(예상일자)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>[여행]</td>
+                        <td><input type="checkbox"></td>
+                        <td>나홀로 영국</td>
+                        <td>트렌치 코트 입고 빅벤 앞에서 커피 마시기</td>
+                        <td>25년 말~26년 예상</td>
+                    </tr>
+                    <tr>
+                        <td>[여행]</td>
+                        <td><input type="checkbox"></td>
+                        <td>부모님 여행 보내드리기</td>
+                        <td>국내/해외 어디든 돈 모아서 부모님 패키지 여행 보내드리기</td>
+                        <td>적금 끝나는대로 바로</td>
+                    </tr>
+                    <tr>
+                        <td>[여행]</td>
+                        <td><input type="checkbox"></td>
+                        <td>삼남매 일본</td>
+                        <td>언니 오빠랑 일본 여행 가기(도쿄)</td>
+                        <td>24년 말</td>
+                    </tr>
+                    <tr>
+                        <td>[자기계발]</td>
+                        <td><input type="checkbox"></td>
+                        <td>자격증 취득</td>
+                        <td>컴퓨터활용능력 1급 취득</td>
+                        <td>2024년 여름 방학</td>
+                    </tr>
+                    <tr>
+                        <td>[자기계발]</td>
+                        <td><input type="checkbox"></td>
+                        <td>자격증 취득</td>
+                        <td>정보처리기사 취득</td>
+                        <td>대학교 4학년(2026년)</td>
+                    </tr>
+                    <tr>
+                        <td>[자기계발]</td>
+                        <td><input type="checkbox"></td>
+                        <td>영어 공부</td>
+                        <td>외국에서도 프리토킹 가능하도록 회화 공부</td>
+                        <td>매일 공부</td>
+                    </tr>
+                    <tr>
+                        <td>[미래]</td>
+                        <td><input type="checkbox"></td>
+                        <td>전원주택</td>
+                        <td>시골에서 2층 주택을 지어 전원 생활하기</td>
+                        <td>50살 이후</td>
+                    </tr>
+                    <tr>
+                        <td>[미래]</td>
+                        <td><input type="checkbox"></td>
+                        <td>게임방 만들기</td>
+                        <td>게임방을 만들어서 내가 좋아하는 게임 하기</td>
+                        <td>취업 이후</td>
+                    </tr>
+                    <tr>
+                        <td>[연애]</td>
+                        <td><input type="checkbox"></td>
+                        <td>벚꽃 구경</td>
+                        <td>애인이랑 손 잡고 벚꽃 구경하러 가기</td>
+                        <td>애인이 생길 때...</td>
+                    </tr>
+                    <tr>
+                        <td>[연애]</td>
+                        <td><input type="checkbox"></td>
+                        <td>남산 타워</td>
+                        <td>남산 타워에서 자물쇠 달고 오기</td>
+                        <td>애인이 생길 때...</td>
+                    </tr>
+                    </tbody>
+                </table>
+
                 `;
-                break;
-            default:
-                content.innerHTML = `
+                    break;
+
+                default:
+                    content.innerHTML = `
                     <h1>404 - Page Not Found</h1>
                 `;
             }
-    }
+        }
+
     </script>
 
     <!-- CSS -->
     <style>
+        /* body css*/
         body {
             font-family: Arial, sans-serif;
+            padding-bottom: 62px;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%; height: 50px;
+            background-color: white;
+            z-index: 1000;
+            display: flex;
+            justify-content: center; align-items: center;
         }
 
         nav ul {
             list-style-type: none;
-            padding: 0;
+            padding: 0; margin: 0;
+            text-align: center;
         }
 
         nav li {
@@ -66,24 +258,278 @@
             text-decoration: underline;
         }
 
+        footer {
+            position: fixed;
+            bottom: 0px;
+            height: 30px;
+            width: 100%;
+            font-size: 14px;
+            background-color: #fcfcfc;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            border-top: 1px solid #e0e0e0;
+            text-align: center;
+            z-index: 1000; /* 다른 요소들이 footer를 덮지 않도록 */
+        }
+
+        /* Home css*/
         #content {
+            padding: 20px 20px 20px;
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #content-profile {
+            width: 960px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        #content-profile>#main_section {
+            float: left;
+        }
+
+        #content-profile>#main_aside {
+            width: 700px;
+            height: 370px;
+            float: right;
+        }
+
+        .myself {
+            text-align: center;
+            padding: 100px;
+        }
+
+        .myself > h1 { 
+            font-size: 50px;
+            color: #3973FF;
+        }
+
+        .myself a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .myself a:hover {
+            text-decoration: underline;
+            color: pink;
+        }
+
+        .profile {
+            width: 210px;  /*230*/
+            height: 250px;  /*290*/
+            display: flex;
+        }
+
+        .profile-box {
+            border: 1px solid #ccc;
+            padding: 20px;
             margin-top: 20px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .profile-box a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .link a {
+            margin-left: 20px;
+            margin-right: 13px;
+        }
+
+        .links a:last-child {
+            margin-right: 0;
+            /* 마지막 링크에 마진 제거 */
+        }
+
+        .link img {
+            width: 40px;
+            height: 40px;
+        }
+
+        /* Book css*/
+        .books {
+            width: 350px;
+            height: 400px;
+            margin-left: 10px;
+            margin-right: 13px;
+        }
+
+        .bookstlye {
+            padding: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            display: inline-block;
+            text-align: center;
+            position: relative;
+        }
+        
+        .bookstlye > .impression {
+            width: 350px;
+            height: 100px;
+            overflow: scroll;
+            text-align: left;
+        }
+
+        /* bukitlist css*/
+        table {
+            border: 1px #a39485 solid;
+            font-size: .9em;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, .25);
+            width: 100%;
+            border-collapse: collapse;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        th {
+            text-align: center;
+        }
+
+        thead {
+            font-weight: bold;
+            color: black;
+            background: #FFFE9F;
+        }
+
+        td,
+        th {
+            padding: 1em .5em;
+            vertical-align: middle;
+        }
+
+        td {
+            border-bottom: 1px solid rgba(0, 0, 0, .1);
+            background: #fff;
+            text-align: center;
+        }
+
+        a {
+            color: #73685d;
+        }
+
+        @media all and (max-width: 768px) {
+
+            #content-profile {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #content-profile>#main_section, 
+            #content-profile>#main_aside {
+                float: none;
+                width: 100%;
+                
+            }
+
+            #content-profile>#main_aside {
+                font-size: 13px;
+            }
+
+            .myself {
+                padding: 20px;
+            }
+
+            .myself > h1 {
+                font-size: 40px;
+            }
+
+            .profile {
+                width: 100%;
+                height: auto;
+            }
+
+            .profile-box {
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            .link {
+                display: flex;
+                justify-content: center;
+            }
+
+            .link a {
+                margin: 10px;
+            }
+
+            .books {
+                width: 100%;
+                height: auto;
+            }
+
+            .bookstlye {
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+
+            th, td {
+                text-align: left;
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            thead {
+                display: none;
+            }
+
+            tr {
+                margin-bottom: 10px;
+                border-bottom: 2px solid #ddd;
+                padding: 10px;
+            }
+
+            td {
+                border: none;
+                position: relative;
+                padding-left: 50%;
+                text-align: right;
+            }
+
+            td:before {
+                position: absolute;
+                top: 50%;
+                left: 10px;
+                transform: translateY(-50%);
+                white-space: nowrap;
+                font-weight: bold;
+            }
+
+            td:nth-of-type(1):before { content: "분야"; background-color: #FFFE9F;}
+            td:nth-of-type(2):before { content: "달성 여부"; background-color: #FFFE9F;}
+            td:nth-of-type(3):before { content: "하고 싶은 일"; background-color: #FFFE9F;}
+            td:nth-of-type(4):before { content: "내용"; background-color: #FFFE9F;}
+            td:nth-of-type(5):before { content: "달성 기한일(예상일자)"; background-color: #FFFE9F;}
         }
     </style>
 </head>
+
 <body>
     <nav>
         <ul>
-          <li><a href="#home" onclick="navigate('home')">Home</a></li>
-          <li><a href="#birth" onclick="navigate('birth')">Birth</a></li>
-          <li><a href="#bukitlist" onclick="navigate('bukitlist')">Bukit List</a></li>
+            <li><a href="#home" onclick="navigate('home')">Home</a></li>
+            <li><a href="#book" onclick="navigate('book')">Book Club</a></li>
+            <li><a href="#bukitlist" onclick="navigate('bukitlist')">Bukit List</a></li>
         </ul>
     </nav>
     <div id="content">
-        <!-- Content will be loaded here -->
+        <!-- Script에 존재 -->
+
     </div>
+
     <footer class="footer">
-        <p>Copyright @ 2024. Yumi Kim(dbal8620@naver.com) All rights reserved.</p>
+        <p>Copyright @ 2024. Yumi Kim(dbal8620@kangwon.ac.kr) All rights reserved.</p>
     </footer>
 </body>
+
 </html>
